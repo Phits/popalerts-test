@@ -1,4 +1,59 @@
-h1 {
-  color: red; }
+@font-face {
+  font-family: "Main";
+  src: url("../fonts/gt-walsheim-web.eot");
+  src: url("../fonts/gt-walsheim-web.eot?#iefix") format("embedded-opentype"), url("../fonts/gt-walsheim-web.woff") format("woff"), url("../fonts/gt-walsheim-web.ttf") format("truetype"), url("../fonts/gt-walsheim-web.svg#main") format("svg"); }
+@font-face {
+  font-family: "Oblique";
+  src: url("../fonts/gt-walsheim-regular-oblique-web.eot");
+  src: url("../fonts/gt-walsheim-regular-oblique-web.eot?#iefix") format("embedded-opentype"), url("../fonts/gt-walsheim-regular-oblique-web.woff") format("woff"), url("../fonts/gt-walsheim-regular-oblique-web.ttf") format("truetype"), url("../fonts/gt-walsheim-regular-oblique-web.svg#main") format("svg"); }
+body {
+  background-color: #ebecee; }
+  body header {
+    background-color: #212121;
+    height: 90px;
+    text-align: center;
+    width: 100%; }
+    body header h1 {
+      display: inline-block;
+      font-family: "Main";
+      color: #FFFFFF;
+      font-size: 28px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-top: 32px; }
+    body header svg {
+      display: block;
+      position: absolute;
+      height: 36px;
+      top: 33px; }
+      body header svg #Menu {
+        fill: #FFFFFF; }
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  html {
+    border: solid red 5px; }
+
+  header svg {
+    right: -8%; } }
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  html {
+    border: solid green 5px; }
+
+  header svg {
+    right: 4%; } }
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  html {
+    border: solid orange 5px; } }
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  html {
+    border: solid blue 5px; } }
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  html {
+    border: solid yellow 5px; } }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,3 +1,124 @@
-h1 {
-	color: red;
+// Fonts
+$font-path 					: "../fonts/";
+$icon-font-path				: $font-path;
+
+$main-font					: "Main";
+$main-font-path				: "#{$font-path}gt-walsheim-web";
+
+$oblique-font				: "Oblique";
+$oblique-font-path			: "#{$font-path}gt-walsheim-regular-oblique-web";
+
+// Colors
+$white						: #FFFFFF;
+$soft-black                 : #212121;
+$background                 : #ebecee;
+
+@font-face {
+    font-family: $main-font;
+    src: url("#{$main-font-path}.eot");
+    src: url("#{$main-font-path}.eot?#iefix") format('embedded-opentype'),
+         url("#{$main-font-path}.woff") format('woff'),
+         url("#{$main-font-path}.ttf") format('truetype'),
+         url("#{$main-font-path}.svg#main") format('svg');
 }
+
+@font-face {
+    font-family: $oblique-font;
+    src: url("#{$oblique-font-path}.eot");
+    src: url("#{$oblique-font-path}.eot?#iefix") format('embedded-opentype'),
+         url("#{$oblique-font-path}.woff") format('woff'),
+         url("#{$oblique-font-path}.ttf") format('truetype'),
+         url("#{$oblique-font-path}.svg#main") format('svg');
+}
+
+body {
+	background-color: $background;
+
+	header {
+		background-color: $soft-black;
+		height: 90px;
+		text-align: center;
+		width: 100%;
+
+		h1 {
+			display: inline-block;
+			font-family: $main-font;
+			color: $white;
+			font-size: 28px;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			margin-top: 32px;
+		}
+
+		svg {
+			display: block;
+			position: absolute;
+			height: 36px;
+			top: 33px;
+
+			#Menu {
+		        fill: $white;
+			}
+		}
+	}
+
+}
+
+// Responsive
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+    html {
+    	border: solid red 5px;
+    }
+
+    header {
+    	svg {
+    		right: -8%;
+    	}
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+     html {
+    	border: solid green 5px;
+    }
+
+    header {
+    	svg {
+    		right: 4%;
+    	}
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+     html {
+    	border: solid orange 5px;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+     html {
+    	border: solid blue 5px;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+     html {
+    	border: solid yellow 5px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
