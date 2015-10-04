@@ -2,7 +2,7 @@
 
 Be sure to run npm install.
 
-You will need to change the IP address in Gruntfile.js to qa mobile locally.
+You will need to change the IP address in Gruntfile.js to run locally and qa mobile.
 
 Use "grunt" to serve local.
 
