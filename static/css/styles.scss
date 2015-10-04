@@ -182,12 +182,17 @@ body {
 		        font-size: 16px;
 		        text-transform: uppercase;
 		        margin-top: -5px;
-
-		        &:hover {
-		        	background-color: #ffe787;
-		        }
         	}
-        }  
+
+        	&:hover {
+        		cursor: pointer;
+        	}
+        	
+        	&:hover .edit {
+        		cursor: hand;
+        		background-color: #ffe787;
+        	}
+        }
 	}
 }
 
