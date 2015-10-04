@@ -28,32 +28,125 @@ body {
       top: 33px; }
       body header svg #Menu {
         fill: #FFFFFF; }
+  body .box-style {
+    width: 84%;
+    margin: 30px 8%;
+    -webkit-box-shadow: 1px 1px 1px 0px #e6e6e6;
+    -moz-box-shadow: 1px 1px 1px 0px #e6e6e6;
+    box-shadow: 1px 1px 1px 0px #e6e6e6;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #FFFFFF; }
+  body .search {
+    display: block;
+    height: 90px; }
+    body .search input {
+      display: block;
+      text-align: left;
+      color: #d4d2d3;
+      font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+      font-size: 24px;
+      padding: 29px 0 0 40px;
+      letter-spacing: 1px;
+      border: none; }
+    body .search input:focus,
+    body .search select:focus,
+    body .search textarea:focus,
+    body .search button:focus {
+      outline: none; }
+    body .search svg {
+      display: block;
+      position: absolute;
+      height: 36px;
+      top: 150px;
+      right: 7%; }
+      body .search svg #Menu {
+        fill: #212121; }
+  body .alert-wrapper .alert-types {
+    display: block;
+    text-align: center;
+    height: 110px; }
+    body .alert-wrapper .alert-types ul {
+      padding-top: 38px;
+      list-style: none;
+      color: #d4d2d3; }
+      body .alert-wrapper .alert-types ul .popular {
+        border: solid #d4d2d3 1px;
+        margin-right: -2px;
+        -moz-border-radius-bottomleft: 5px;
+        border-bottom-left-radius: 5px;
+        -moz-border-radius-topleft: 5px;
+        border-top-left-radius: 5px; }
+      body .alert-wrapper .alert-types ul .your {
+        border-top: solid #d4d2d3 1px;
+        border-right: solid #d4d2d3 1px;
+        border-bottom: solid #d4d2d3 1px;
+        margin-left: -2px;
+        -moz-border-radius-bottomright: 5px;
+        border-bottom-right-radius: 5px;
+        -moz-border-radius-topright: 5px;
+        border-top-right-radius: 5px; }
+      body .alert-wrapper .alert-types ul .active {
+        background-color: #ececec;
+        color: #212121; }
+    body .alert-wrapper .alert-types ul li {
+      display: inline;
+      font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+      font-size: 24px;
+      margin: 0 0;
+      padding: 10px 50px; }
+  body .alert-wrapper .alert {
+    display: inline-block;
+    height: 90px;
+    width: 100%;
+    font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+    background-color: #FFFFFF;
+    border-top: solid #d4d2d3 1px; }
+    body .alert-wrapper .alert h2 {
+      font-size: 24px;
+      padding: 0 0 0 20px;
+      margin: 29px 0 0 0; }
+    body .alert-wrapper .alert .edit {
+      float: right;
+      text-align: center;
+      padding-top: 12px;
+      background-color: #ebecee;
+      width: 90px;
+      height: 40px;
+      -moz-border-radius: 40px;
+      border-radius: 40px;
+      font-family: "Main";
+      font-size: 16px;
+      text-transform: uppercase;
+      margin-top: -5px; }
+      body .alert-wrapper .alert .edit:hover {
+        background-color: #ffe787; }
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width: 320px) {
   html {
-    border: solid red 5px; }
+    border: solid red 1px; }
 
   header svg {
     right: -8%; } }
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 480px) {
   html {
-    border: solid green 5px; }
+    border: solid green 1px; }
 
   header svg {
     right: 4%; } }
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
   html {
-    border: solid orange 5px; } }
+    border: solid orange 1px; } }
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
   html {
-    border: solid blue 5px; } }
+    border: solid blue 1px; } }
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
   html {
-    border: solid yellow 5px; } }
+    border: solid yellow 1px; } }
 
 /*# sourceMappingURL=styles.css.map */

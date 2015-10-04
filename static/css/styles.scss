@@ -8,10 +8,13 @@ $main-font-path				: "#{$font-path}gt-walsheim-web";
 $oblique-font				: "Oblique";
 $oblique-font-path			: "#{$font-path}gt-walsheim-regular-oblique-web";
 
+$serif-font	                : Garamond, Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif;
+
 // Colors
 $white						: #FFFFFF;
 $soft-black                 : #212121;
 $background                 : #ebecee;
+$light-grey                 : #d4d2d3;
 
 @font-face {
     font-family: $main-font;
@@ -62,13 +65,137 @@ body {
 		}
 	}
 
+	.box-style {
+		width: 84%;
+		margin: 30px 8%;
+        -webkit-box-shadow: 1px 1px 1px 0px rgba(230,230,230,1);
+		-moz-box-shadow: 1px 1px 1px 0px rgba(230,230,230,1);
+		box-shadow: 1px 1px 1px 0px rgba(230,230,230,1);
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+		background-color: $white;
+	}
+
+	.search {
+		display: block;
+		height: 90px;
+
+		input {
+			display: block;
+            text-align: left;
+            color: $light-grey;
+            font-family: $serif-font;
+            font-size: 24px;
+            padding: 29px 0 0 40px;
+            letter-spacing: 1px;
+            border: none;
+		}
+
+		input:focus,
+			select:focus,
+			textarea:focus,
+			button:focus {
+			outline: none;
+        }
+
+		svg {
+			display: block;
+			position: absolute;
+			height: 36px;
+			top: 150px;
+			right: 7%;
+
+			#Menu {
+		        fill: $soft-black;
+			}
+		}
+	}
+
+	.alert-wrapper {
+
+		.alert-types {
+			display: block;
+		    text-align: center;
+		    height: 110px;
+
+            ul { 
+            	padding-top: 38px;
+            	list-style: none;
+            	color: $light-grey;
+
+                .popular {
+                	border: solid $light-grey 1px;
+                	margin-right: -2px;
+                    -moz-border-radius-bottomleft: 5px;
+                    border-bottom-left-radius: 5px;
+                    -moz-border-radius-topleft: 5px;
+                    border-top-left-radius: 5px;
+                }
+                .your {
+                	border-top: solid $light-grey 1px;
+                	border-right: solid $light-grey 1px;
+                	border-bottom: solid $light-grey 1px;
+                	margin-left: -2px;
+                	-moz-border-radius-bottomright: 5px;
+                    border-bottom-right-radius: 5px;
+                    -moz-border-radius-topright: 5px;
+                    border-top-right-radius: 5px;
+                }
+                .active {
+                	background-color: #ececec;
+                	color: $soft-black;
+                }
+            }
+
+            ul li { 
+            	display: inline; 
+            	font-family: $serif-font;
+                font-size: 24px;
+                margin: 0 0;
+                padding: 10px 50px;
+            }  
+        } 
+        .alert {
+        	display: inline-block;
+        	height: 90px;
+        	width: 100%;
+        	font-family: $serif-font;
+        	background-color: $white;
+        	border-top: solid $light-grey 1px;
+
+        	h2 {
+        		font-size: 24px;
+        		padding: 0 0 0 20px;
+        		margin: 29px 0 0 0;
+        	}
+
+        	.edit {
+                float: right;
+                text-align: center;
+                padding-top: 12px;
+                background-color: $background;
+                width: 90px;
+                height: 40px;
+                -moz-border-radius: 40px;
+		        border-radius: 40px;
+		        font-family: $main-font;
+		        font-size: 16px;
+		        text-transform: uppercase;
+		        margin-top: -5px;
+
+		        &:hover {
+		        	background-color: #ffe787;
+		        }
+        	}
+        }  
+	}
 }
 
 // Responsive
 /* Custom, iPhone Retina */ 
 @media only screen and (min-width : 320px) {
     html {
-    	border: solid red 5px;
+    	border: solid red 1px;
     }
 
     header {
@@ -81,7 +208,7 @@ body {
 /* Extra Small Devices, Phones */ 
 @media only screen and (min-width : 480px) {
      html {
-    	border: solid green 5px;
+    	border: solid green 1px;
     }
 
     header {
@@ -94,21 +221,21 @@ body {
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
      html {
-    	border: solid orange 5px;
+    	border: solid orange 1px;
     }
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
      html {
-    	border: solid blue 5px;
+    	border: solid blue 1px;
     }
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
      html {
-    	border: solid yellow 5px;
+    	border: solid yellow 1px;
     }
 
 }
