@@ -1,4 +1,4 @@
-# starter-template
+# Pop Alerts Test
 
 Be sure to run npm install.
 
