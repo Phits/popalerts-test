@@ -48,7 +48,7 @@ body {
     position: absolute;
     top: 120px;
     z-index: 100;
-    right: 8%;
+    right: 9.25%;
     width: 220px;
     height: 200px;
     background-color: #212121;
@@ -69,7 +69,7 @@ body {
     position: absolute;
     top: 110px;
     z-index: 10;
-    right: 10.5%;
+    right: 11.5%;
     background-color: #212121;
     width: 25px;
     height: 25px;
@@ -168,9 +168,6 @@ body {
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width: 320px) {
-  html {
-    border: solid red 1px; }
-
   header svg {
     right: -8%; }
 
@@ -180,27 +177,21 @@ body {
     padding: 10px 20px; } }
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 480px) {
-  html {
-    border: solid green 1px; }
-
   header svg {
     right: 4%; }
 
   body .alert-wrapper .alert-types ul li {
-    font-size: 24px;
-    margin: 0 0;
-    padding: 10px 50px; } }
+    font-size: 18px;
+    margin-left: -35px;
+    padding: 10px 20px; } }
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
-  html {
-    border: solid orange 1px; } }
+  body .alert-wrapper .alert-types ul li {
+    font-size: 24px;
+    margin: 0 0;
+    margin-left: -35px;
+    padding: 10px 50px; } }
 /* Medium Devices, Desktops */
-@media only screen and (min-width: 992px) {
-  html {
-    border: solid blue 1px; } }
 /* Large Devices, Wide Screens */
-@media only screen and (min-width: 1200px) {
-  html {
-    border: solid yellow 1px; } }
 
 /*# sourceMappingURL=styles.css.map */
