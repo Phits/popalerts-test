@@ -8,6 +8,8 @@
   src: url("../fonts/gt-walsheim-regular-oblique-web.eot?#iefix") format("embedded-opentype"), url("../fonts/gt-walsheim-regular-oblique-web.woff") format("woff"), url("../fonts/gt-walsheim-regular-oblique-web.ttf") format("truetype"), url("../fonts/gt-walsheim-regular-oblique-web.svg#main") format("svg"); }
 body {
   background-color: #ebecee; }
+  body .show {
+    display: block; }
   body header {
     background-color: #212121;
     height: 90px;
@@ -24,10 +26,14 @@ body {
     body header svg {
       display: block;
       position: absolute;
+      right: 10.5%;
       height: 36px;
+      width: 36px;
       top: 33px; }
       body header svg #Menu {
         fill: #FFFFFF; }
+        body header svg #Menu:hover {
+          cursor: pointer; }
   body .box-style {
     width: 84%;
     margin: 30px 8%;
@@ -37,6 +43,41 @@ body {
     -moz-border-radius: 3px;
     border-radius: 3px;
     background-color: #FFFFFF; }
+  body .drop-menu {
+    display: none;
+    position: absolute;
+    top: 120px;
+    z-index: 100;
+    right: 8%;
+    width: 220px;
+    height: 200px;
+    background-color: #212121;
+    -moz-border-radius: 3px;
+    border-radius: 3px; }
+    body .drop-menu .menu-item {
+      color: #FFFFFF;
+      font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+      font-size: 16px;
+      width: 220px;
+      height: 50px;
+      padding: 15px 0 0 20px; }
+      body .drop-menu .menu-item:hover {
+        background-color: #ffe787;
+        color: soft-black; }
+  body .arrow {
+    display: none;
+    position: absolute;
+    top: 110px;
+    z-index: 10;
+    right: 10.5%;
+    background-color: #212121;
+    width: 25px;
+    height: 25px;
+    -ms-transform: rotate(45deg);
+    /* IE 9 */
+    -webkit-transform: rotate(45deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(45deg); }
   body .search {
     display: block;
     height: 90px; }
@@ -131,14 +172,24 @@ body {
     border: solid red 1px; }
 
   header svg {
-    right: -8%; } }
+    right: -8%; }
+
+  body .alert-wrapper .alert-types ul li {
+    font-size: 18px;
+    margin-left: -35px;
+    padding: 10px 20px; } }
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 480px) {
   html {
     border: solid green 1px; }
 
   header svg {
-    right: 4%; } }
+    right: 4%; }
+
+  body .alert-wrapper .alert-types ul li {
+    font-size: 24px;
+    margin: 0 0;
+    padding: 10px 50px; } }
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
   html {

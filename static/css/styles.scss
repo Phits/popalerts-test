@@ -15,6 +15,7 @@ $white						: #FFFFFF;
 $soft-black                 : #212121;
 $background                 : #ebecee;
 $light-grey                 : #d4d2d3;
+$highlight                  : #ffe787;
 
 @font-face {
     font-family: $main-font;
@@ -37,6 +38,10 @@ $light-grey                 : #d4d2d3;
 body {
 	background-color: $background;
 
+	.show {
+		display: block;
+	}
+
 	header {
 		background-color: $soft-black;
 		height: 90px;
@@ -56,11 +61,17 @@ body {
 		svg {
 			display: block;
 			position: absolute;
+			right: 10.5%;
 			height: 36px;
+			width: 36px;
 			top: 33px;
 
 			#Menu {
 		        fill: $white;
+
+		        &:hover {
+		        	cursor: pointer;
+		        }
 			}
 		}
 	}
@@ -75,6 +86,47 @@ body {
 		border-radius: 3px;
 		background-color: $white;
 	}
+
+	.drop-menu {
+		display: none;
+		position: absolute;
+		top: 120px;
+		z-index: 100;
+		right: 8%;
+		width: 220px;
+		height: 200px;
+		background-color: $soft-black;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+
+		.menu-item {
+			color: $white;
+			font-family: $serif-font;
+			font-size: 16px;
+			width: 220px;
+            height: 50px;
+            padding: 15px 0 0 20px;
+           
+            &:hover {
+            	background-color: $highlight;
+            	color: soft-black;
+            }
+		}
+	}
+
+	.arrow {
+		    display: none;
+			position: absolute;
+			top: 110px;
+			z-index: 10;
+			right: 10.5%;
+			background-color: $soft-black;
+			width: 25px;
+			height: 25px;
+			-ms-transform: rotate(45deg); /* IE 9 */
+		    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+		    transform: rotate(45deg);
+		}
 
 	.search {
 		display: block;
@@ -187,10 +239,10 @@ body {
         	&:hover {
         		cursor: pointer;
         	}
-        	
+
         	&:hover .edit {
         		cursor: hand;
-        		background-color: #ffe787;
+        		background-color: $highlight;
         	}
         }
 	}
@@ -208,6 +260,12 @@ body {
     		right: -8%;
     	}
     }
+
+    body .alert-wrapper .alert-types ul li { 
+        font-size: 18px;
+        margin-left: -35px;
+        padding: 10px 20px;
+	}  
 }
 
 /* Extra Small Devices, Phones */ 
@@ -221,6 +279,12 @@ body {
     		right: 4%;
     	}
     }
+
+    body .alert-wrapper .alert-types ul li { 
+        font-size: 24px;
+        margin: 0 0;
+        padding: 10px 50px;
+	}  
 }
 
 /* Small Devices, Tablets */
