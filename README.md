@@ -8,3 +8,7 @@ Use "grunt" to serve local.
 
 Use "grunt build" for deployment files to be created and put into the build folder.
 
+If you are getting a SASS gem error try the following.
+
+Install sass ruby by gem install sass
+
